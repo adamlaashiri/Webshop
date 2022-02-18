@@ -76,6 +76,13 @@ namespace Webshop
             aol.Show();
             Close();
         }
+
+        private void ButtonAggregated_Click(object sender, RoutedEventArgs e)
+        {
+            AdminAggregatedData aad = new();
+            aad.Show();
+            Close();
+        }
     }
 
 }

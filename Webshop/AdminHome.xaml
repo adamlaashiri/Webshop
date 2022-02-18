@@ -33,6 +33,7 @@
             <Button x:Name="ButtonEditProduct" Margin="0 0 0 10" Click="ButtonEditProduct_Click" >Ändra eller ta bort Produkt</Button>
             <Button x:Name="ButtonStockBalance" Margin="0 0 0 10" Click="ButtonStockBalance_Click">Lagersaldo</Button>
             <Button x:Name="ButtonOrders" Margin="0 0 0 10" Click="ButtonOrders_Click">Ordrar</Button>
+            <Button x:Name="ButtonAggregated" Margin="0 0 0 10" Click="ButtonAggregated_Click" >Ordrar</Button>
         </StackPanel>
 
         <Button x:Name="ButtonLogout" Grid.Column="3" Grid.Row="3" Margin="5" Background="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}" Click="ButtonLogout_Click">Logga ut
