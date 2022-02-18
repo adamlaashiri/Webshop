@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="AdminAggregatedData.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AdminEditProduct.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AdminHome.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AdminLogin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AdminManageCategory.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AdminManageProduct.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AdminOrderList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AdminStockBalance.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Shop.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ShopCart.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AdminAggregatedData.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AdminEditProduct.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AdminHome.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AdminLogin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AdminManageCategory.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AdminManageProduct.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AdminOrderList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AdminStockBalance.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Shop.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ShopCart.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

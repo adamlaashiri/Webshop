@@ -1,0 +1,43 @@
+﻿<Window x:Class="Webshop.AdminHome"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Webshop"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d" FontSize="18"
+        Title="Webshop" Height="500" Width="800" FontFamily="Segoe UI Light">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="100"/>
+
+            <RowDefinition Height="*"/>
+
+            <RowDefinition Height="40"/>
+
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="TextTitle" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" FontSize="36" FontFamily="Segoe UI Light" FontWeight="Bold"></TextBlock>
+        <StackPanel Grid.Row="2" Grid.Column="1">
+            <Button x:Name="ButtonAddCategory" Margin="0 0 0 10" Click="ButtonAddCategory_Click">Lägg till kategori</Button>
+            <Button x:Name="ButtonAddProduct" Margin="0 0 0 10" Click="ButtonAddProduct_Click">Lägg till produkt</Button>
+            <Button x:Name="ButtonEditProduct" Margin="0 0 0 10" Click="ButtonEditProduct_Click" >Ändra eller ta bort Produkt</Button>
+            <Button x:Name="ButtonStockBalance" Margin="0 0 0 10" Click="ButtonStockBalance_Click">Lagersaldo</Button>
+            <Button x:Name="ButtonOrders" Margin="0 0 0 10" Click="ButtonOrders_Click">Ordrar</Button>
+        </StackPanel>
+
+        <Button x:Name="ButtonLogout" Grid.Column="3" Grid.Row="3" Margin="5" Background="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}" Click="ButtonLogout_Click">Logga ut
+        </Button>
+
+
+    </Grid>
+</Window>

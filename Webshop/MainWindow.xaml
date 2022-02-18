@@ -1,0 +1,33 @@
+﻿<Window x:Class="Webshop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Webshop"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d" FontSize="18"
+        Title="Webshop" Height="500" Width="800" FontFamily="Segoe UI Light">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" FontSize="36" FontFamily="Segoe UI Light" FontWeight="Bold">Välkommen till webbshoppen</TextBlock>
+        
+        <Button x:Name="toShop" Content="Till Shoppen" Grid.Row="2" Grid.Column="1" Margin="0 10 10 10" Click="toShop_Click"/>
+        <Button x:Name="toAdmin" Content="Administratör" Grid.Row="2" Grid.Column="2" Margin="0 10 10 10" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" Click="toAdmin_Click"/>
+
+
+    </Grid>
+</Window>
