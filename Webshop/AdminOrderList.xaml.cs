@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -46,6 +47,7 @@ namespace Webshop
             var orderId = int.Parse(((ListBoxItem)ListBoxOrders.SelectedItem).Tag.ToString());
             OrderQuery orderQuery = ShopDBHandler.getOrder(orderId);
 
+            TextBlocDate.Text = $"{orderQuery.Order.OrderDate.ToString("yyyy/MM/dd HH:mm", CultureInfo.CreateSpecificCulture("se-SE"))}";
             TextBlockName.Text = $"Namn: {orderQuery.Customer.Name}";
             TextBlockAdress.Text = $"Address: {orderQuery.Customer.Address}";
             TextTelephone.Text = $"Telefon: {orderQuery.Customer.Telephone}";

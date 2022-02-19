@@ -11,7 +11,8 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
-            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="20"/>
         </Grid.ColumnDefinitions>
@@ -26,7 +27,20 @@
 
         <TextBlock x:Name="TextTitle" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"  FontSize="36" FontFamily="Segoe UI Light" FontWeight="Bold">Statisktik (Aggregerad data)</TextBlock>
 
-        
+        <StackPanel Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3">
+            <TextBlock>Hej</TextBlock>
+            <TextBlock x:Name="TextTopProduct" Margin="0 0 0 10"></TextBlock>
+            <TextBlock x:Name="TextLeastSoldProduct" Margin="0 0 0 10"></TextBlock>
+            <TextBlock x:Name="TextAverageProductsPerOrder" Margin="0 0 0 10"></TextBlock>
+            <TextBlock x:Name="TextTopCategory" Margin="0 0 0 10"></TextBlock>
+            <TextBlock x:Name="TextStockValuation" Margin="0 0 0 10"></TextBlock>
+            <TextBlock x:Name="TextLeastStockedProduct" Margin="0 0 0 10"></TextBlock>
+            <TextBlock x:Name="TextMostStockedProduct" Margin="0 0 0 10"></TextBlock>
+            <TextBlock x:Name="TextPopularShipper" Margin="0 0 0 10"></TextBlock>
+            <TextBlock x:Name="TextPopularMen" Margin="0 0 0 10"></TextBlock>
+            <TextBlock x:Name="TextPopularWomen" Margin="0 0 0 10"></TextBlock>
+        </StackPanel>
+
 
 
         <Button x:Name="ButtonGoBack" Grid.Column="1" Grid.Row="4" Margin="10 0 0 0" Click="ButtonGoBack_Click">Tillbaka</Button>

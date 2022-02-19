@@ -63,8 +63,9 @@ namespace Webshop
             using (var db = new webshopContext())
             {
                 var result = (from featured in db.Products
-                              where featured.Featured == true
-                              select featured).Take(quantity); // we only want "quantity" amount of featured products
+                             join od in db.OrderDetails on featured.ProductId equals od.ProductId
+                             orderby od.Quantity descending
+                             select featured).Take(3);
 
                 return (result.ToList() != null) ? result.ToList() : null;
             }

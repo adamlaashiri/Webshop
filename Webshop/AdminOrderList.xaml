@@ -40,6 +40,7 @@
         <!-- Order details -->
         <ScrollViewer Grid.Row="3" Grid.Column="2"  VerticalScrollBarVisibility="auto">
             <StackPanel>
+                <TextBlock x:Name="TextBlocDate" FontWeight="Bold" FontFamily="Segoe UI">Datum: </TextBlock>
                 <TextBlock x:Name="TextBlockName">Namn: </TextBlock>
                 <TextBlock x:Name="TextBlockAdress">Address: </TextBlock>
                 <TextBlock x:Name="TextTelephone">Telefon: </TextBlock>
